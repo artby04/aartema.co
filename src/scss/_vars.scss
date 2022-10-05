@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Avenir", sans-serif;
+  --content-width: 1206px;
+  --container-offset: 50px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --black-color: #000000;
+  --light-color: #fff;
+  --accent-color: #fed441;
+  --dark-color: #191300;
+  --gray-color: #f2f2f2;
+  // 010028
+  --dark-text-color: #000000;
+}

@@ -1,0 +1,23 @@
+.nav {
+  &__list {
+    @include flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    color: var(--dark-text-color);
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+}

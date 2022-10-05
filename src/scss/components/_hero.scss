@@ -1,0 +1,32 @@
+.hero {
+  height: var(--vh);
+  min-height: 550px;
+  background-color: var(--accent-color);
+  @include flex;
+
+  &__container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    // line-height: 58px;
+    color: var(--dark-text-color);
+    margin-bottom: 30px;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 138%;
+    max-width: 625px;
+    margin-bottom: 30px;
+    color: var(--dark-text-color);
+  }
+}

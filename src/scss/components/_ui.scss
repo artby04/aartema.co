@@ -1,0 +1,85 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black-color);
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 25%);
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 18px 50px;
+  color: var(--light-color);
+  min-width: 180px;
+  transition: opacity 300ms ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo {
+  font-family: "Averta";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.1rem;
+  color: var(--dark-text-color);
+  &-dark {
+    opacity: 0.5;
+  }
+}
+
+.section-label {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--light-color);
+
+  padding-bottom: 15px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--light-color);
+  }
+
+  &-black {
+    color: var(--black-color);
+
+    &::after {
+      background: var(--black-color);
+    }
+  }
+}
+
+.section-title {
+  max-width: 590px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 137%;
+  margin-top: 64px;
+}
+
+.section-paragraph {
+  max-width: 590px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.paragrapg-reset {
+  margin-bottom: 0;
+}
+
+.section {
+  padding: 140px 0;
+}
