@@ -2,15 +2,17 @@ const { execSync } = require("child_process");
 const git = require("simple-git")();
 
 try {
-  console.log("Запуск сборки...");
+  console.log("Running build...");
   execSync("gulp build");
-  console.log("Сборка успешно завершена.");
+  console.log("Build successful.");
 
-  console.log("Добавление изменений в git...");
+  const commitMessage = "Automatic build update " + new Date().toISOString();
+
+  console.log("Adding changes to git...");
   git
     .add(".")
-    .commit("Автоматическое обновление сборки")
-    .push("origin", "main", () => console.log("Изменения успешно отправлены."));
+    .commit(commitMessage)
+    .push("origin", "main", () => console.log("Changes pushed successfully."));
 } catch (error) {
-  console.error("Ошибка во время выполнения скрипта:", error);
+  console.error("Error while running script:", error);
 }
