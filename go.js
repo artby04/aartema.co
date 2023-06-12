@@ -10,9 +10,7 @@ try {
   git
     .add(".")
     .commit("Автоматическое обновление сборки")
-    .push("origin", "master", () =>
-      console.log("Изменения успешно отправлены.")
-    );
+    .push("origin", "main", () => console.log("Изменения успешно отправлены."));
 } catch (error) {
   console.error("Ошибка во время выполнения скрипта:", error);
 }
