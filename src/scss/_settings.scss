@@ -1,7 +1,38 @@
 html {
   box-sizing: border-box;
+  user-select: auto;
+}
+body {
+  cursor: none;
+  overflow: hidden;
 }
 
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transition-property: background-color, transform, border-color;
+  background-color: transparent;
+}
+
+.cursor.expand {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.cursor.link-hover {
+  background-color: black;
+  border-color: white;
+}
+
+::selection {
+  color: white;
+  background-color: var(--dark-color);
+}
 *,
 *::before,
 *::after {

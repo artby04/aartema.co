@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/promo.scss","components/promo.css"],"names":[],"mappings":"AAAA;EACE,qCAAA;ACCF","file":"components/promo.css","sourcesContent":[".promo {\n  background-color: var(--accent-color);\n  &__paragraph {\n  }\n}\n",".promo {\n  background-color: var(--accent-color);\n}"]}

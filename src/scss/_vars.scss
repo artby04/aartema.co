@@ -3,16 +3,19 @@
 :root {
   // base
   --font-family: "Avenir", sans-serif;
-  --content-width: 1206px;
-  --container-offset: 50px;
+  --content-width: 100%;
+  --container-offset: 25px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  // colors
+  // MARK: colors
   --black-color: #000000;
   --light-color: #fff;
-  --accent-color: #fed441;
-  --dark-color: #191300;
+  --accent-color: #dbff00;
+  --dark-color: #151924;
   --gray-color: #f2f2f2;
   // 010028
+
+  --burger-color: #151924;
+
   --dark-text-color: #000000;
 }

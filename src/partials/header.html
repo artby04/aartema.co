@@ -1,21 +1,29 @@
 <header class="header">
   <div class="header__container container">
-    <a href="#" class="logo"> aartema </a>
-    <nav class="nav" title="Главное меню">
+    <a href="#" class="header__logo logo aartema-link" data-logo>aartema</a>
+    <nav class="nav" title="Main menu" data-menu>
       <ul class="nav__list list-reset">
         <li class="nav__item">
-          <a href="#services" class="nav__link" data-scroll>Services</a>
-        </li>
-        <li class="nav__item">
-          <a href="#partners" class="nav__link" data-scroll>Partners</a>
-        </li>
-        <li class="nav__item">
-          <a href="#team" class="nav__link" data-scroll>Team</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link" data-scroll>Contact</a>
+          <a
+            href="https://t.me/artyommarketing"
+            class="nav__link"
+            target="_blank"
+            data-scroll
+            data-menu-item
+            >tg</a
+          >
         </li>
       </ul>
     </nav>
+    <button
+      class="burger btn-reset"
+      aria-label="Open menu"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
