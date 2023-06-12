@@ -21,10 +21,18 @@
       line-height: 120px;
       color: var(--black-color);
       margin: 0;
+      @include small-tablet {
+        font-size: 80px;
+      }
+      @include mid-mobile {
+        font-size: 50px;
+      }
     }
   }
 
   &__services {
+    margin-left: 0;
+    padding: 0;
   }
 }
 .version {
@@ -47,6 +55,10 @@
 .services-list {
   display: flex;
   list-style: none;
+
+  @include small-tablet {
+    flex-direction: column;
+  }
   &__item {
     position: relative;
     font-weight: 400;
@@ -54,6 +66,16 @@
     line-height: 36px;
     color: var(--black-color);
     margin-right: 80px;
+
+    @include small-tablet {
+      margin-top: 36px;
+      margin-right: 0;
+      margin-bottom: 8px;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+    }
 
     &::after {
       content: "";
@@ -64,6 +86,10 @@
       width: 2px;
       background: #000000;
       opacity: 0.2;
+
+      @include small-tablet {
+        display: none;
+      }
     }
     &:last-child {
       margin-right: 0;
