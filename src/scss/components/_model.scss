@@ -1,0 +1,11 @@
+.bus-model {
+  display: flex;
+
+  &__item {
+    width: 480px;
+    height: 480px;
+    background-color: gray;
+
+    border-radius: 40px;
+  }
+}

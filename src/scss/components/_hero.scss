@@ -21,6 +21,7 @@
       line-height: 120px;
       color: var(--black-color);
       margin: 0;
+
       @include small-tablet {
         font-size: 80px;
       }

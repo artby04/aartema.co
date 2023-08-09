@@ -22,10 +22,10 @@ const timeline = gsap.timeline();
 timeline.to(
   [".logo"],
   {
-    y: 0,
+    x: 0,
     stagger: 0.3,
-    duration: 2.5,
-    ease: "power4.out",
+    duration: 1,
+    ease: Elastic.easeOut.config(1, 0.3),
   },
   0
 );
